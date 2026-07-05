@@ -1,0 +1,53 @@
+{
+  "brand": {
+    "name": "Rajat Bhatheja",
+    "role": "Data & AI Architect",
+    "tagline": "I help teams turn data and AI into production systems.",
+    "accent": "#38BDF8",
+    "domain": "rajatbhatheja.is-a.dev",
+    "footer_handle": "@rajat_bhatheja",
+    "substack": "https://thedatamuse.substack.com",
+    "substack_name": "The Data Muse",
+    "linkedin": "https://www.linkedin.com/in/rajatbhatheja",
+    "x": "https://x.com/rajat_bhatheja",
+    "x_handle": "@rajat_bhatheja"
+  },
+  "hero": {
+    "kicker": "Data & AI Architect",
+    "headline": "Turning data and AI into systems that ship.",
+    "sub": "15+ years building production-grade data platforms and agentic AI \u2014 MCP, multi-agent orchestration, and RAG. I write about it at The Data Muse.",
+    "primary_cta": {"label": "Read The Data Muse", "href": "https://thedatamuse.substack.com"},
+    "secondary_cta": {"label": "Connect on LinkedIn", "href": "https://www.linkedin.com/in/rajatbhatheja"}
+  },
+  "about": {
+    "title": "About",
+    "body": [
+      "I'm Rajat \u2014 a Data & AI Architect at Microsoft. I design and build production agentic systems: Model Context Protocol (MCP) integrations, multi-agent orchestration, RAG pipelines, and the data platforms underneath them.",
+      "I care about the unglamorous parts that make AI actually work in production \u2014 clean data contracts, grounded outputs, evaluation, and disciplined lifecycle management. I teach with analogies and real examples, because the best systems are simple, not clever."
+    ],
+    "badges": ["Microsoft Certified Trainer (MCT)", "MCP & Agents", "Data Platforms", "RAG & Evaluation"]
+  },
+  "writing": {
+    "title": "Writing \u2014 The Data Muse",
+    "intro": "Essays on GenAI, LLMs, AI agents, data engineering, and analytics platforms \u2014 teaching the hard parts in plain language.",
+    "cta": {"label": "Read all essays on Substack", "href": "https://thedatamuse.substack.com"}
+  },
+  "topics": {
+    "title": "What I write & build about",
+    "items": [
+      {"h": "AI agents & MCP", "p": "Designing multi-agent systems and Model Context Protocol tools that are reliable in production."},
+      {"h": "GenAI & RAG", "p": "Retrieval, grounding, and evaluation patterns that keep LLM outputs trustworthy."},
+      {"h": "Data platforms", "p": "Modular, open-format data architectures \u2014 decoupled storage/compute, governance, contracts."},
+      {"h": "From POC to production", "p": "The lifecycle discipline that turns a demo into a system teams depend on."}
+    ]
+  },
+  "connect": {
+    "title": "Get in touch",
+    "body": "Always up for a good conversation on data, AI, and building things that last.",
+    "links": [
+      {"label": "The Data Muse", "href": "https://thedatamuse.substack.com"},
+      {"label": "LinkedIn", "href": "https://www.linkedin.com/in/rajatbhatheja"},
+      {"label": "X / Twitter", "href": "https://x.com/rajat_bhatheja"}
+    ]
+  }
+}
