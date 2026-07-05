@@ -3,6 +3,11 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *"   # daily ~06:30 IST: refresh featured essays from Substack
+
+permissions:
+  contents: write
 
 jobs:
   build_and_deploy:
@@ -10,6 +15,21 @@ jobs:
     name: Build and Deploy
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh posts + build site
+        run: |
+          python site_posts_pull.py --limit 6 || echo "posts pull skipped"
+          python build_site.py
+      - name: Persist refreshed content (scheduled only)
+        if: github.event_name == 'schedule'
+        run: |
+          git config user.name "site-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "site: daily posts refresh" || echo "no changes"
+          git push || echo "nothing to push"
       - name: Deploy to SWA
         uses: Azure/static-web-apps-deploy@v1
         with:
